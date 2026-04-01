@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    card_view:cardBackgroundColor="#FFFFFF">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:padding="16dp">
+
+  <!-- 📍 Location Name -->
+  <TextView
+      android:id="@+id/nameText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Home"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      android:textColor="#000000" />
+
+  <!-- Buttons Row -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="10dp">
+
+   <Button
+       android:id="@+id/navigateBtn"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:text="🧭 Navigate"
+       android:backgroundTint="#2196F3"
+       android:textColor="#FFFFFF"/>
+
+   <Button
+       android:id="@+id/deleteBtn"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:text="🗑 Delete"
+       android:backgroundTint="#F44336"
+       android:textColor="#FFFFFF"/>
+  </LinearLayout>
+ </LinearLayout>
+
+</androidx.cardview.widget.CardView>
